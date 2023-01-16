@@ -12,6 +12,11 @@ body {
 
 }
 
+label {
+    margin: 8px 0 4px;
+    font-weight: 600;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -282,10 +287,10 @@ h1 {
     gap: 50px;
 }
 
-.card {
+.my-card {
     font-size: 1.5rem;
     font-weight: 600;
-    width: 320px;
+    width: 210px;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -299,7 +304,7 @@ h1 {
     transition: transform .2s;
 }
 
-.card:hover {
+.my-card:hover {
     transform: scale(1.05);
 }
 
@@ -337,7 +342,7 @@ h1 {
 #footer {
     background-color: #F6F0E3;
     text-align: center;
-    padding: 50px;
+    padding: 20px;
 }
 
 .footer-icon {
@@ -355,7 +360,7 @@ h1 {
 }
 
 .animate {
-    --num: 1580;
+    --num: 3458;
 }
 
 .animate-1 {
@@ -363,7 +368,15 @@ h1 {
 }
 
 .animate-2 {
-    --num: 485;
+    --num: 205;
+}
+
+.animate-3 {
+    --num: 40;
+}
+
+.animate-4 {
+    --num: 1200;
 }
 
 .active1 {
@@ -380,6 +393,46 @@ h1 {
     background-image: linear-gradient(#F6F0E3 0%, #f6f0e3 75%, rgba(0, 0, 0, 0));
 }
 
+#event-intro {
+    padding: 4% 0;
+}
+
+#current-events {
+    /* margin-top: -50px; */
+    padding: 4% 0;
+    background-color: #F6F0E3;
+    /* box-shadow: inset 0 -50px 150px #122b1c; */
+}
+
+#past-events {
+    padding: 4% 0;
+    background-color: #F6F0E3;
+}
+
+#registration-form {
+    padding: 4% 0;
+}
+
+.info-table {
+    border: 2px solid #040002;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.regestration-form {
+    margin: 4% 0;
+    padding: 4% 0;
+    border: 2px solid #040002;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.form-header {
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 4px;
+}
+
 @media (max-width: 420px) {
     .brand-img {
         width: 30vw;
@@ -387,5 +440,9 @@ h1 {
 
     .torn-paper {
         padding: 2% 12% 10ch;
+    }
+
+    .info-table {
+        font-size: smaller;
     }
 }
